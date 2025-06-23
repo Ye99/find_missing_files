@@ -16,3 +16,4 @@ def main(subset_dir, superset_dir):
         click.echo("The following files were found in the subset folder but not in the superset folder:")
         for f in missing_files:
             click.echo(f)
+        click.echo(f"Total missing files number: {len(missing_files)}")
